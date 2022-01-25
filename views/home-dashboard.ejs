@@ -4,7 +4,7 @@
     <%- include('includes/flash')%>   
     <% if(posts.length){ %>
 
-      <h2 class= "text-center mb-4">The latest from those you follow</h2>
+      <h2 style="font-family: 'Mochiy Pop P One', sans-serif;" class= "text-center mb-4">The latest from those you follow</h2>
       <div class="list-group">
         <% posts.forEach(function(post){ %>
          <a href="/post/<%= post._id%>" class="list-group-item list-group-item-action">

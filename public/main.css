@@ -1,6 +1,12 @@
 body,
 .tooltip {
   font-family: "Open Sans", sans-serif;
+  background-color: #f2f3f4;
+}
+
+label{
+  font-family: 'Dongle', sans-serif;
+  font-size: 30px;
 }
 
 .header-bar {
@@ -45,6 +51,11 @@ body,
   font-weight: 500;
 }
 
+#post-title{
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 20px;
+}
+
 .body-content {
   font-size: 1.2rem;
   line-height: 1.75;
@@ -58,9 +69,9 @@ body,
 }
 
 .input-dark {
-  background-color: #444;
+  background-color: #fff;
   border-color: transparent;
-  color: #ffffff;
+  color: #000;
 }
 
 .input-dark:focus {
