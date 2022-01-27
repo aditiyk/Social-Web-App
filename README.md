@@ -4,7 +4,7 @@
 ***>It follows the MVC pattern***
 
 
-***>Model-View-Controller is a design pattern which divides our programming logic into three parts. ***
+***>Model-View-Controller is a design pattern which divides our programming logic into three parts.***
 
 
 ***>The *Model* consists of our business logic whereas the controller controls the data flow into the model object while *View* represents the visualization of the data.***
