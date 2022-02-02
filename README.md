@@ -38,6 +38,15 @@ Note: *Both client side and server side validation has been performed to take ex
 > - To do this we use the espression session destroy() method 
 >   - It deletes the session in the database. 
 >   -  After that the user is redirected to the home page.
+> - If there is a failed login, temporary flash messages are shown and user is redirected back to the home page.
+
+## Viewing a post that the user created
+
++ A new route is created to do this in our router.js
++ To find a document with the requested id, we use MongoDB ObjectId() to check if the _id of our database maches the requested id
++ <img width="704" alt="id" src="https://user-images.githubusercontent.com/85080181/152195210-9c48dda1-ce4f-4414-99ca-0edb16eeff62.PNG">
+
+
 
 
 
