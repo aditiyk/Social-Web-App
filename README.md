@@ -1,7 +1,6 @@
->This is a full stack web application made using **Node.js** , **Express** , **MongoDB** and **Bootstrap**
+# This is a full stack web application made using **Node.js** , **Express** , **MongoDB** , **ejs** and **Bootstrap**
 
->***It follows the MVC pattern***
-
+## This app follows the MVC pattern since it allows us to separate code into 3 components to prevent spaghetti tangle of code.
 
 >***Model-View-Controller is a design pattern which divides our programming logic into three parts.***
 
