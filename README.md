@@ -22,7 +22,7 @@
 > - To hash the email, the *md5* library is used.
 > - If there are no validation errors in the registration form, then the user data is saved into the database.
 
-> Note: *Both client side and server side validation has been performed to take extra care that no malicious users can register.*
+Note: *Both client side and server side validation has been performed to take extra care that no malicious users can register.*
 
 ![es2](https://user-images.githubusercontent.com/85080181/151333254-b80e5eff-c2b0-44eb-8160-f1852eb0799c.PNG)
 
