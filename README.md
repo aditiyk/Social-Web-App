@@ -35,7 +35,9 @@ Note: *Both client side and server side validation has been performed to take ex
 
 > Note: *Logout*
 > - A logout route has been created in order to safely log a user out on clicking the Sign out button.
-> - To do this we use the espression session destroy() method -  After that the user is redirected to the home page.
+> - To do this we use the espression session destroy() method 
+>   - It deletes the session in the database. 
+>   -  After that the user is redirected to the home page.
 
 
 
