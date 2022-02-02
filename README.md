@@ -22,15 +22,20 @@
 > - To hash the email, the *md5* library is used.
 > - Image displaying the hashed passwords in MongoDB:-
 > <img width="387" alt="mongo" src="https://user-images.githubusercontent.com/85080181/152190429-0158f81c-3595-4c61-a642-87d8de9feac1.PNG">
+> 
 > - If there are no validation errors in the registration form, then the user data is saved into the database.
 
 Note: *Both client side and server side validation has been performed to take extra care that no malicious users can register.*
 
 ## Enabling Sessions in our application
 
-1. HTTP requests are stateless. Each request is ran without any knowledge about the requests that ran before it.
-2. So, in order for the server to know that after a successful login, the subsequent requests are from the same user, we use session-management.
-3. The package *express-session* is installed to do so.
++ HTTP requests are stateless. Each request is ran without any knowledge about the requests that ran before it.
++ So, in order for the server to know that after a successful login, the subsequent requests are from the same user, we use session-management.
++ The package *express-session* is installed to do so.
+
+> Note: *Logout*
+> - A logout route has been created in order to safely log a user out on clicking the Sign out button.
+> - To do this we use the espression session destroy() method -  After that the user is redirected to the home page.
 
 
 
