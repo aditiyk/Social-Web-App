@@ -42,21 +42,26 @@ Note: *Both client side and server side validation has been performed to take ex
 
 ## Viewing a post that the user created
 
-+ A new route is created to do this in our router.js
-+ To find a document with the requested id, we use MongoDB ObjectId() to check if the _id of our database maches the requested id
-+ <img width="704" alt="id" src="https://user-images.githubusercontent.com/85080181/152195210-9c48dda1-ce4f-4414-99ca-0edb16eeff62.PNG">
+> + A new route is created to do this in our router.js
+> + To find a document with the requested id, we use MongoDB ObjectId() to check if the _id of our database maches the requested id
+> <img width="704" alt="id" src="https://user-images.githubusercontent.com/85080181/152195210-9c48dda1-ce4f-4414-99ca-0edb16eeff62.PNG">
+
+## Displaying a user profile screen
+
++ Firstly, profile.ejs template is created.
++ To pull in real data for whichever user we're looking for we need to first verify whether that user actually *exists*
++ we create a function in our controller called :- *ifUserExists* which returns a promise.
++ If the promise resolves, that means it has found a user in the database that matches the requested username.
++ If it rejects, a 404 screen is rendered.  
++ users can also follow, unfollow or chat with other logged in users.
+<img width="877" alt="kitty" src="https://user-images.githubusercontent.com/85080181/152197718-bb6585fc-56eb-47db-b14c-68cd261c2517.PNG">
 
 
 
 
 
 
-1) On successfully logging in they can view all the posts from the users that they follow.
-2) Users can edit and delete their own posts.
-3) They can follow and unfollow other users.
-4) They can chat with all the users that are logged in.
 
-![es3](https://user-images.githubusercontent.com/85080181/151332924-cb45ba71-706c-4075-b9e1-f824d1b31f45.PNG)
 
 
 **Video:-** 
