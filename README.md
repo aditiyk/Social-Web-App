@@ -22,9 +22,6 @@
 > - To hash the email, the *md5* library is used.
 > - Image displaying the hashed passwords in MongoDB:-
 > <img width="387" alt="mongo" src="https://user-images.githubusercontent.com/85080181/152190429-0158f81c-3595-4c61-a642-87d8de9feac1.PNG">
-
-
-> ![es2](https://user-images.githubusercontent.com/85080181/151333254-b80e5eff-c2b0-44eb-8160-f1852eb0799c.PNG)
 > - If there are no validation errors in the registration form, then the user data is saved into the database.
 
 Note: *Both client side and server side validation has been performed to take extra care that no malicious users can register.*
