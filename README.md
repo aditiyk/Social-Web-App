@@ -56,6 +56,14 @@ Note: *Both client side and server side validation has been performed to take ex
 + users can also follow, unfollow or chat with other logged in users.
 <img width="877" alt="kitty" src="https://user-images.githubusercontent.com/85080181/152197718-bb6585fc-56eb-47db-b14c-68cd261c2517.PNG">
 
+> Users can edit or delete their *own* posts. 
+> To allow users to create paragraphs, make their text bold or italic when they edit or submit a post, a package called *marked* has been used.
+> - To not allow a random visitor to view our edit screen, 
+>    - in the postController it has been checked first is the authorId of that particular post matches with the requested visitor id
+>    - Only if the visitor is the owner of that post, the edit and delete options are shown
+>    - Otherwise the visitor is redirected to the homepage and is displayed a corresponding flash message.
+>    <img width="706" alt="edit1" src="https://user-images.githubusercontent.com/85080181/152199772-ce7d16f7-2556-49b6-a219-a2dec176184d.PNG">
+>    <img width="705" alt="edit2" src="https://user-images.githubusercontent.com/85080181/152199853-f2d50a6f-3a57-4d03-8182-a7f47aaeea88.PNG">
 
 
 
@@ -64,7 +72,9 @@ Note: *Both client side and server side validation has been performed to take ex
 
 
 
-**Video:-** 
+
+
+# **Video:-** 
 
 
 https://user-images.githubusercontent.com/85080181/151333389-6ab4910e-e60e-402a-9b50-119ddb69ebc7.mp4
