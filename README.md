@@ -7,17 +7,22 @@
 
 
 >***Model-View-Controller is a design pattern which divides our programming logic into three parts.***
+>
+>>***The *Model* consists of our business logic whereas the controller controls the data flow into the model object while *View* represents the visualization of the data.***
 
-
->***The *Model* consists of our business logic whereas the controller controls the data flow into the model object while *View* represents the visualization of the data.***
-
-
+##### This is how it looks at first glance:-
 ![es1](https://user-images.githubusercontent.com/85080181/151331405-d5a20d64-8684-4586-8cea-fd0fa3b234f1.PNG)
 
-New users are allowed to register first. Without a username and password they cannot login. 
+> ### User registration validation is taken taken care of in the User model.
+> 
+> - For validation checks, the validator package has been used.
+> - If a username is valid, then it is checked inside the database if it is already taken. 
+> - To do that, the findOne() method is used which returns a promise. To make sure that Javascript waits till our promise resolves or rejects, async-await syntax has been used.
+> - In order to hash the password entered by users, *bcrypt.js* library is used.
+> - To hash the email, the *md5* library is used.
+> - If there are no validation errors in the registration form, then the user data is saved into the database.
 
->The chosen username must contain only *letters* and not any alphanumeric characters. 
->Both client side and server side validation has been performed to take extra care that no malicious users can register.
+> Note: *Both client side and server side validation has been performed to take extra care that no malicious users can register.*
 
 ![es2](https://user-images.githubusercontent.com/85080181/151333254-b80e5eff-c2b0-44eb-8160-f1852eb0799c.PNG)
 
