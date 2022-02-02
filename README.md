@@ -20,10 +20,19 @@
 > - To do that, the findOne() method is used which returns a promise. To make sure that Javascript waits till our promise resolves or rejects, async-await syntax has been used.
 > - In order to hash the password entered by users, *bcrypt.js* library is used.
 > - To hash the email, the *md5* library is used.
+> - Image displaying the hashed passwords in MongoDB:-
+> <img width="207" alt="mongo" src="https://user-images.githubusercontent.com/85080181/152190234-1d1568f5-3c6c-4b76-8fa8-e3d44c6b167c.PNG">
+
 > ![es2](https://user-images.githubusercontent.com/85080181/151333254-b80e5eff-c2b0-44eb-8160-f1852eb0799c.PNG)
 > - If there are no validation errors in the registration form, then the user data is saved into the database.
 
 Note: *Both client side and server side validation has been performed to take extra care that no malicious users can register.*
+
+## Enabling Sessions in our application
+
+1. HTTP requests are stateless. Each request is ran without any knowledge about the requests that ran before it.
+2. So, in order for the server to know that after a successful login, the subsequent requests are from the same user, we use session-management.
+3. The package *express-session* is installed to do so.
 
 
 
